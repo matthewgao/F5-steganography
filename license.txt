@@ -1,0 +1,7 @@
+This software is based in part on the work of
+James R. Weeks/BioElectroMech, james@obrador.com, and the Independent
+	JPEG Group (package james)
+Sean Breslin/Dr. Ortega (package ortega)
+John Walker, kelvin@fourmilab.ch (package randomX)
+
+The rest of this software is released under the GPL.  See gpl.txt for details.

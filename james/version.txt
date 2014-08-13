@@ -1,0 +1,10 @@
+This is version 1.0a.  This version corrected the dirty edges of images whose
+dimensions were not mutliples of 8.
+
+Version 1.0 was a fix of the below bug but still had dirty edges in
+non-multiple-of-8 dimension images.
+
+Version 0.9 didn't flush the entropy encoder's buffer and
+resulted in files that some viewers were unable to read.  This has been
+fixed in version 1.0.
+
