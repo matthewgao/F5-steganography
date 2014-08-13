@@ -1,4 +1,4 @@
-Steganography Software F5
+# Steganography Software F5
 
 This package is meant to demonstrate a new steganographic algorithm.  It
 is a very preliminary version to embed files into true colour BMP, GIF,
@@ -11,6 +11,7 @@ The attacks presented on the third Workshop on Information Hiding are not
 successful with F5.
 http://wwwrn.inf.tu-dresden.de/~westfeld/attacks.html
 
+## How to run
 To run this software you need a Java runtime environment.  There are two
 shell scripts to demonstrate what you can do with this software:
 
