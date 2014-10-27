@@ -1,4 +1,5 @@
 # Steganography Software F5
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/matthewgao/F5-steganography?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This package is meant to demonstrate a new steganographic algorithm.  It
 is a very preliminary version to embed files into true colour BMP, GIF,
