@@ -18,7 +18,7 @@ public class Embed
         System.out.println("-e <file to embed>\tdefault: embed nothing");
         System.out.println("-p <password>\t\tdefault: \"abc123\", only used when -e is specified");
         System.out.println("-q <quality 0 ... 100>\tdefault: 80");
-        System.out.println("-c <comment>\t\tdefault: \"JPEG Encoder Copyright 1998, James R. Weeks and BioElectroMech.  \"");
+        System.out.println("-c <comment>\t\tdefault: \"CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 80\"");
         System.out.println("");
         System.out.println("\"InputImage\" is the name of an existing image in the current directory.");
         System.out.println("  (\"InputImage may specify a directory, too.) \"ext\" must be .tif, .gif,");
@@ -50,7 +50,8 @@ public class Embed
 // If not, print the standard use info.
 	boolean haveInputImage = false;
 	String embFileName=null;
-	String comment="JPEG Encoder Copyright 1998, James R. Weeks and BioElectroMech.  ";
+        //Lie. Claim be the product of a common PHP jpeg lib
+	String comment="CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 80\n  ";
 	String password="abc123";
 	String inFileName=null;
 	String outFileName=null;
