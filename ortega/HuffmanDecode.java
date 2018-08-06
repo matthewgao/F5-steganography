@@ -112,7 +112,7 @@ public class HuffmanDecode {
     };
     
     // Constructor Method
-    public HuffmanDecode(byte[] data) {
+    public HuffmanDecode(byte[] data) throws IOException {
 	size = (short) data.length;
 	dis = new DataInputStream(new ByteArrayInputStream(data));
 	// Parse out markers and header info
@@ -121,6 +121,7 @@ public class HuffmanDecode {
             if(255 == getByte()) {
 		switch(getByte()) {
 		case 192:   sof0(); break;
+        case 194:   throw new IOException("Progressive scan JPEGs not supported by decoder");
 		case 196:   dht(); break;
 		case 219:   dqt(); break;
 		case 217:   cont = false; break;

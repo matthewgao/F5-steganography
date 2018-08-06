@@ -536,7 +536,7 @@ System.out.println("Starting Huffman Encoding.");
         JFIF[16] = (byte) 0x00;
         JFIF[17] = (byte) 0x00;
 
-        if (JpegObj.getComment().equals("JPEG Encoder Copyright 1998, James R. Weeks and BioElectroMech.  "))
+        if (JpegObj.getComment().equals("CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 80\n  "))
 		JFIF[10] = (byte) 0x00;	// 1.00
         WriteArray(JFIF, out);
 

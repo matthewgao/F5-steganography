@@ -37,3 +37,15 @@ Best regards,
 Andreas Westfeld
 westfeld@inf.tu-dresden.de
 http://www.inf.tu-dresden.de/~aw4
+
+
+
+Branch Notes
+
+HuffmanDecode.java
+Fixed an issues with it hanging if given a progressive JPEG. This is what
+was causing that "Nf weder 1 noch 3" error. Now just throws IOException.
+
+JpegEncoder.java and Embed,java
+Changed the default comment to throw off suspicion. Now lies and claims to
+be the product of a popular PHP jpeg lib. 
