@@ -39,6 +39,36 @@ westfeld@inf.tu-dresden.de
 http://www.inf.tu-dresden.de/~aw4
 
 
+## Docker
+
+You can run the code in a small container image. This spares you from
+having to install java dependencies locally.
+
+To do so, check out the repository
+
+```
+git clone git@github.com:matthewgao/F5-steganography.git
+cd F5-steganography
+```
+
+Now go ahead and build the image locally:
+
+```
+docker build -f F5-steganography .
+```
+
+Once the build has finished, you can move to any folder, that contains
+the image, you want to target and run your image
+
+```
+docker run -ti --rm -v -v "$(pwd):/usr/src/myapp/files F5-steganography /bin/bash
+```
+Now you are inside the container can can run commands like 
+
+```
+java -mx40M Extract files/myfile.jpg -p pleasechangethispassphrasetoyourown
+``` 
+
 
 Branch Notes
 
